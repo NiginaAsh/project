@@ -40,7 +40,7 @@
     } 
     .header { 
       /*background-color: #000; */
-      position: fixed;
+      position: relative; /*криша некачается а было fixed-качалось*/
      top: 0;
      width: 100%;
      left: 0;
