@@ -254,3 +254,33 @@
     }
   }
  
+  .places__caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+  /*places styles stsrt*/
+  /* .places__title {
+    margin-bottom: 36px;
+  } */
+
+  .places-view-all {
+    font-size: 16px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/SVG/Strel.svg) no repet right center;
+  }
+
+  .section__title:: ::after {
+    display: block;
+    content ''; /* обязательно нужно указать*/
+    width: 253px;
+    height: 3px;
+    background-color: ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
