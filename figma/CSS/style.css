@@ -1,0 +1,286 @@
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  html {
+      box-sizing: border-box;
+  }
+  *,*::before,*::after {
+    box-sizing: inherit;
+  }
+  .item {
+      width: 200px;
+      height: 100px;
+      background-color: rgb(82, 153, 114);
+      padding: 20px;
+     }
+     .wrapper{ 
+      max-width: 1060px; 
+      margin: 0 auto; /*Выравнивание по центру, данное свойство будет выранивать внутри его родителя по центру */ 
+    } 
+    .header { 
+      /*background-color: #000; */
+      position: relative; /*криша некачается а было fixed-качалось*/
+     top: 0;
+     width: 100%;
+     left: 0;
+    } 
+.header__link:hover, .header__link:focus, .header__link:active {
+  opacity:.75;
+  }
+/*.header__link:first-child:hover {
+  color:crimson;
+}
+.header__link:nth-child(2):hover {
+  color:yellow !important;
+}*/ 
+/*.heder style*/
+    .header_wrapper{ 
+      display: flex; 
+      flex-wrap: wrap; 
+      align-items: flex-end; 
+      justify-content: space-between; 
+      padding-top: 62px; /*56*/
+    } 
+    body {
+      font-family: 'Loto';
+      font-style: normal;
+      font-size: 16px;
+      color: #102746;
+      line-height: 1.2;
+      font-weight: normal;
+    }
+    .header__link {
+      font-size: 18px;
+      line-height: 24px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .header__list {
+      display: flex;
+      flex-wrap:wrap;
+    }
+    .header_item {
+      margin-right: 82px;
+  }
+  .header_item:last-child {
+    margin-right: 0px;
+  }
+  
+  .intro {
+    min-height: 100vh;/* height: 100vh;*/
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+  }
+
+  .intro_title {
+    max-width: 619px;
+    color: white;
+    font-size: 50px ;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 22px;
+  }
+
+  .intro_subtitle {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    max-width: 546px;
+    margin-bottom: 59px;
+  }
+
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search-form_field {
+    /*background-color: transparent;*/
+    background: transparent url(../img/SVG/circl_icon.svg) no-repeat left 4px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px; 
+    padding-left: 43px; 
+    padding-bottom: 24px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;  /*жирность*/
+    line-height: 24px;
+    width: 297px;
+  }
+  
+   .search-form_field::placeholder {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;  /*жирность*/
+    /* line-height: 24px; */
+    /*padding: 0px 0px 50px 20px;*/
+  } 
+  .search-form_submit:hover,.search-form_submit:active,.search-form_submit:focus{
+    background:#306ab7 ;
+  }
+
+  .search-form_submit{
+    text-transform: uppercase; /*text внутри кнобки*/
+    /* width: 171px;
+    height: 58px; */
+    background: #1B7DFF;
+    color: #FFF;
+    /* font-size: 24px; */
+    border: none;
+    padding: 15px 39px;
+  }
+
+  .benefits_wrap {
+    max-width: 1262px;
+    height: 655px;  
+    margin: 0 auto;
+    box-shadow:  0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+    background-color: #fff;
+    position: relative;
+  }
+
+  .benefits_title {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #102746;
+  padding: 93px 100px 93px 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translateY(-80%); /*блок поднимется*/
+  background-color: #fff;
+  width: 100%;
+  margin-top: 120px;
+  }
+
+  .benefits_cards {
+    height:30vh ;
+    display: grid;
+    grid-template-columns: 30% 30% 30%; /*repeat (3, 1fr);*/
+    grid-column-gap: 55px;
+  }
+ 
+  .benefit_card{ 
+    display: grid;
+    width: 317px; 
+    height: 288px; 
+    top: 994px; 
+    left: 189px; 
+    margin: 255px 100px 112px 100px; 
+  } 
+   .benefits__card-pic{
+    max-width: 66px;
+    /* height: 66px;
+    flex-shrink: 0; */
+    margin-bottom: 37px;
+    
+   }
+   .benefits__card-thumb {
+    display: block;
+   }
+  
+  .benefits__card-title{ 
+    width: 224px; 
+    color: #000;  
+    font-size: 18px; 
+    font-style: normal; 
+    font-weight: 500; 
+    line-height: 24px; /*междустрочний интервал*/
+    font-weight: bold;
+    margin-bottom: 26px;
+  } 
+
+   .benefits__card-desc{  
+    max-width: 317px; 
+    color: #000; 
+    font-size: 16px; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: 24px;  
+    font-weight: bold;
+    margin-bottom: 39px;
+    
+  } 
+   
+   .benefits__card-more{ 
+    color: #006DFE;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 24px; 
+    text-decoration: none; 
+   }
+   
+   .benefits__card-more.strel {
+    font-weight: 400;
+    color: #006DFE;
+    width: 33px;
+    height: 8px;
+    
+  }
+
+  @media screen (max-width: 500px){
+    body{
+        text-align: center ;
+        display: block;
+    }
+  }
+ 
+  .places__caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+  /*places styles stsrt*/
+  /* .places__title {
+    margin-bottom: 36px;
+  } */
+
+  .places-view-all {
+    font-size: 16px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/SVG/Strel.svg) no repet right center;
+  }
+
+  .section__title:: ::after {
+    display: block;
+    content ''; /* обязательно нужно указать*/
+    width: 253px;
+    height: 3px;
+    background-color: ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
